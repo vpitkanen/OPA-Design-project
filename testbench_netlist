@@ -7,7 +7,7 @@
 simulator lang=spectre
 include "ade_e.scs"
 global 0 vdd!
-include "/usr/local/contrib/cadence/PDK/gpdk045_v_5_0/gpdk045/../models/spectre/gpdk045.scs" section=mc
+include "<PATH_TO_PDK>/models/spectre/gpdk045.scs" section=mc
 
 // Library name: Harkkatyo
 // Cell name: OPA

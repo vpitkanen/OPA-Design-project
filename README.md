@@ -1,6 +1,6 @@
 # OPAMP-design-project
-Design project of a two stage CMOS operational amplifier. Correct operation
-of the amplifier was verified by simulations. The work was done by Cadence circuit design program. Group project (2 people)
+Design project of a two stage CMOS operational amplifier. Component values was first calculated by hand and correct operation
+of the amplifier was verified by different simulations. The work was done by Cadence circuit design program. Group project (2 people)
 
 ## OPAMP Specifications and Results
 

@@ -20,7 +20,7 @@ of the amplifier was verified by simulations. The work was done by Cadence circu
 ![OPA_schematic](OPA_Schematic.png)
 
 ### Testbench for DC-simulations
-![OPA_DC](OPA_testbench.png)
+![OPA_DC](Testbench_dc.png)
 
 ### Testbench for AC-simulations
-![OPA_AC](BodeLC.png)
+![OPA_AC](Testbench_ac.png)

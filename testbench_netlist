@@ -1,0 +1,81 @@
+// Point Netlist Generated on: Apr 23 16:27:30 2026
+// Generated for: spectre
+// Design Netlist Generated on: Apr 23 16:27:29 2026
+// Design library name: Harkkatyo
+// Design cell name: opa_sim
+// Design view name: schematic
+simulator lang=spectre
+include "ade_e.scs"
+global 0 vdd!
+include "/usr/local/contrib/cadence/PDK/gpdk045_v_5_0/gpdk045/../models/spectre/gpdk045.scs" section=mc
+
+// Library name: Harkkatyo
+// Cell name: OPA
+// View name: schematic
+subckt OPA inn inp out
+    M5 (net9 net9 vdd! vdd!) g45p2svt w=(500n) l=1u nf=1 as=75f ad=75f \
+        ps=1.3u pd=1.3u nrd=300m nrs=300m sa=150n sb=150n sd=200n \
+        sca=14.95062 scb=0.01412 scc=0.00050 m=(1)
+    M4 (net4 net9 vdd! vdd!) g45p2svt w=(500n) l=1u nf=1 as=75f ad=75f \
+        ps=1.3u pd=1.3u nrd=300m nrs=300m sa=150n sb=150n sd=200n \
+        sca=14.95062 scb=0.01412 scc=0.00050 m=(1)
+    M3 (out net9 vdd! vdd!) g45p2svt w=(3.98u) l=1u nf=1 as=597f ad=597f \
+        ps=8.26u pd=8.26u nrd=37.6884m nrs=37.6884m sa=150n sb=150n \
+        sd=200n sca=5.66408 scb=0.00353 scc=0.00008 m=(1)
+    M2 (net2 net9 vdd! vdd!) g45p2svt w=(500n) l=1u nf=1 as=75f ad=75f \
+        ps=1.3u pd=1.3u nrd=300m nrs=300m sa=150n sb=150n sd=200n \
+        sca=14.95062 scb=0.01412 scc=0.00050 m=(1)
+    M1 (net1 inp net2 net2) g45p2svt w=(880n) l=1u nf=1 as=132f ad=132f \
+        ps=2.06u pd=2.06u nrd=170.455m nrs=170.455m sa=150n sb=150n \
+        sd=200n sca=11.12983 scb=0.00899 scc=0.00029 m=(1)
+    M0 (net3 inn net2 net2) g45p2svt w=(880n) l=1u nf=1 as=132f ad=132f \
+        ps=2.06u pd=2.06u nrd=170.455m nrs=170.455m sa=150n sb=150n \
+        sd=200n sca=11.12983 scb=0.00899 scc=0.00029 m=(1)
+    M13 (net44 net48 net56 0) g45n2svt w=(2.38u) l=1u nf=1 as=357f ad=357f \
+        ps=5.06u pd=5.06u nrd=63.0252m nrs=63.0252m sa=150n sb=150n \
+        sd=200n sca=21.53212 scb=0.01497 scc=0.00178 m=(1)
+    M12 (net48 net48 0 0) g45n2svt w=(590n) l=1u nf=1 as=88.5f ad=88.5f \
+        ps=1.48u pd=1.48u nrd=254.237m nrs=254.237m sa=150n sb=150n \
+        sd=200n sca=59.15297 scb=0.03697 scc=0.00601 m=(1)
+    M11 (net4 net4 net48 0) g45n2svt w=(590n) l=1u nf=1 as=88.5f ad=88.5f \
+        ps=1.48u pd=1.48u nrd=254.237m nrs=254.237m sa=150n sb=150n \
+        sd=200n sca=59.15297 scb=0.03697 scc=0.00601 m=(1)
+    M10 (net9 net4 net44 0) g45n2svt w=(590n) l=1u nf=1 as=88.5f ad=88.5f \
+        ps=1.48u pd=1.48u nrd=254.237m nrs=254.237m sa=150n sb=150n \
+        sd=200n sca=59.15297 scb=0.03697 scc=0.00601 m=(1)
+    M8 (out net1 0 0) g45n2svt w=(4.67u) l=1u nf=1 as=700.5f ad=700.5f \
+        ps=9.64u pd=9.64u nrd=32.1199m nrs=32.1199m sa=150n sb=150n \
+        sd=200n sca=14.91813 scb=0.01135 scc=0.00110 m=(1)
+    M7 (net1 net3 0 0) g45n2svt w=(500n) l=1u nf=1 as=75f ad=75f ps=1.3u \
+        pd=1.3u nrd=300m nrs=300m sa=150n sb=150n sd=200n sca=67.39473 \
+        scb=0.04174 scc=0.00701 m=(1)
+    M6 (net3 net3 0 0) g45n2svt w=(500n) l=1u nf=1 as=75f ad=75f ps=1.3u \
+        pd=1.3u nrd=300m nrs=300m sa=150n sb=150n sd=200n sca=67.39473 \
+        scb=0.04174 scc=0.00701 m=(1)
+    C0 (net1 out) capacitor c=890.00f
+    R0 (net56 0) resistor r=28.1K
+ends OPA
+// End of subcircuit definition.
+
+// Library name: Harkkatyo
+// Cell name: opa_sim
+// View name: schematic
+V1 (inp 0) vsource dc=1.5 type=dc
+V0 (vdd! 0) vsource dc=3.0 type=dc
+C0 (out 0) capacitor c=5p
+I0 (out inp out) OPA
+simulatorOptions options psfversion="1.4.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
+dcOpInfo info what=oppoint where=rawfile
+dc dc dev=V2 param=dc start=0 stop=3 step=1m oppoint=rawfile maxiters=150 \
+    maxsteps=10000 annotate=status
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

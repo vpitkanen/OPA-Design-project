@@ -1,8 +1,8 @@
-# OPA-design-project
+# OPAMP-design-project
 Design of a two stage CMOS operational amplifier. Correct operation
 of the amplifier was verified by simulations. The work is done by Cadence circuit design program. Group project (2 people)
 
-### OPA Specifications and Results
+## OPAMP Specifications and Results
 
 | Parameter | Symbol | Target Specification | Result |
 | :--- | :---: | :--- | :--- |
@@ -14,3 +14,13 @@ of the amplifier was verified by simulations. The work is done by Cadence circui
 | **Output Voltage Range** | $V_{out}$ | 0.2 V – 2.7 V | 0.437 V - 2.64 V |
 | **Phase Margin** | PM | 55° (Miller)  | 59 |
 
+## Schematics
+
+### OPAMP
+![OPA_schematic](OPA_Schematic.png)
+
+### Testbench for DC-simulations
+![OPA_DC](OPA_testbench.png)
+
+### Testbench for AC-simulations
+![OPA_AC](BodeLC.png)

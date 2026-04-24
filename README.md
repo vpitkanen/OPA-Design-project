@@ -17,10 +17,10 @@ of the amplifier was verified with different simulations using testbenches. The 
 ## Schematics
 
 ### OPAMP
-![OPA_schematic](OPA_Schematic.png)
+![OPA_schematic](Schematics/OPA_Schematic.png)
 
 ### Testbench for DC-simulations
-![OPA_DC](Testbench_dc.png)
+![OPA_DC](Schematics/Testbench_dc.png)
 
 ### Testbench for AC-simulations
-![OPA_AC](Testbench_ac.png)
+![OPA_AC](Schematics/Testbench_ac.png)
